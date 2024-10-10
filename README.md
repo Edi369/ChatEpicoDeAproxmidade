@@ -13,15 +13,19 @@ olha esse cachorro que bunito!!!!!
   <img height="200" src="https://media.tenor.com/D29_A107n2cAAAAi/dog-gyrating.gif"  />
 </div>
 
+<a href="https://i.imgur.com/atVwIpj.jpeg">
 <div align="left" href="https://i.imgur.com/atVwIpj.jpeg">
   <img   src="https://i.imgur.com/Al07rXP.png"  />
 </div>
+</a>
 
 ### não tem por enquanto.. um dia vai ter
 
-<div align="left" href="https://i.imgur.com/atVwIpj.jpeg">
+<a href="https://i.imgur.com/atVwIpj.jpeg">
+<div align="left">
   <img src="https://i.imgur.com/Dxf8FHW.png"  />
 </div>
+</a>
 
 ```yaml
 aproximity_chat:
@@ -42,10 +46,11 @@ aproximity_chat:
     steamid64@here: '[customtaghere]'
     patrickbateman@patrickbateman: '[patrick bateman]'
 ```
-
-<div align="left" href="https://i.imgur.com/atVwIpj.jpeg">
+<a href="https://i.imgur.com/atVwIpj.jpeg">
+<div align="left">
   <img   src="https://i.imgur.com/t8ovAYS.png"  />
 </div>
+</a>
 
 - Tudo por [Edi](https://github.com/Edi369)
 #
