@@ -19,11 +19,7 @@ olha esse cachorro que bunito!!!!!
 </div>
 </a>
 
-<a href="https://i.imgur.com/atVwIpj.jpeg">
-<div align="left">
-  https://github.com/Edi369/ChatEpicoDeAproxmidade/blob/main/Documentations/Assets/NOOCLASSD.gif
-</div>
-</a>
+https://github.com/Edi369/ChatEpicoDeAproxmidade/blob/main/Documentations/Assets/NOOCLASSD.gif
 
 ### não tem por enquanto.. um dia vai ter
 
