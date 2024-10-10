@@ -21,7 +21,6 @@ olha esse cachorro que bunito!!!!!
 <div align="left">
   <img src="https://i.imgur.com/Dxf8FHW.png"  />
 </div>
-##
 
 ```yaml
 aproximity_chat:
@@ -46,7 +45,7 @@ aproximity_chat:
 <div align="left">
   <img src="https://i.imgur.com/OGfClub.png"  />
 </div>
-#
+
 - Tudo por [Edi](https://github.com/Edi369)
 #
 *cabo :)*
