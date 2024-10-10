@@ -43,7 +43,7 @@ aproximity_chat:
 ```
 
 <div align="left">
-  <img src="https://i.imgur.com/OGfClub.png"  />
+  <img weight="300" src="https://i.imgur.com/OGfClub.png"  />
 </div>
 
 - Tudo por [Edi](https://github.com/Edi369)
