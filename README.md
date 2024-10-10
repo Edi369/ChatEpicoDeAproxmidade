@@ -14,8 +14,14 @@ olha esse cachorro que bunito!!!!!
 </div>
 
 <a href="https://i.imgur.com/atVwIpj.jpeg">
-<div align="left" href="https://i.imgur.com/atVwIpj.jpeg">
+<div align="left">
   <img   src="https://i.imgur.com/Al07rXP.png"  />
+</div>
+</a>
+
+<a href="https://i.imgur.com/atVwIpj.jpeg">
+<div align="left">
+  <img   src="https://i.imgur.com/paQjpFx.gif"  />
 </div>
 </a>
 
