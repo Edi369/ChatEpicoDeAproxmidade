@@ -19,7 +19,7 @@ olha esse cachorro que bunito!!!!!
 </div>
 </a>
 
-https://assetsproxchat.s3.sa-east-1.amazonaws.com/CLASSDNOOO.mp4
+[![videomassa](https://i.imgur.com/QvPOBaX.png)]([https://i.imgur.com/atVwIpj.jpeg](https://assetsproxchat.s3.sa-east-1.amazonaws.com/CLASSDNOOO.mp4))
 
 ### não tem por enquanto.. um dia vai ter
 
