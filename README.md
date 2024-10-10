@@ -19,7 +19,7 @@ olha esse cachorro que bunito!!!!!
 </div>
 </a>
 
-https://github.com/Edi369/ChatEpicoDeAproxmidade/blob/main/Documentations/Assets/NOOCLASSD.gif
+https://assetsproxchat.s3.sa-east-1.amazonaws.com/CLASSDNOOO.mp4
 
 ### não tem por enquanto.. um dia vai ter
 
