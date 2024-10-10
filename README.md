@@ -1,4 +1,4 @@
-[![LogoMassa](https://i.imgur.com/hbH6zhI.png)](https://i.imgur.com/atVwIpj.jpeg)
+[![LogoMassa](https://i.imgur.com/QvPOBaX.png)](https://i.imgur.com/atVwIpj.jpeg)
 
 <h1 align="right">ChatEpicoDeAproxmidade</h1>
 <h3>Um plugin pro <a href="https://store.steampowered.com/app/700330/SCP_Secret_Laboratory">scp sl</a> usando <a href="https://github.com/Exiled-Team/EXILED">EXILED(exilado)</a> que permite que pessoas mudas se comuniquem no jogo!!</h3>
