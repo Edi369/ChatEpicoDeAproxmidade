@@ -1,6 +1,4 @@
-<div align="center" href="https://discord.gg/Wb9248PwwY">
-  <img weight="475" height="120" src="https://i.imgur.com/hbH6zhI.png"  />
-</div>
+[![LogoMassa](https://i.imgur.com/hbH6zhI.png)](https://discord.gg/Wb9248PwwY)
 
 <h1 align="right">ChatEpicoDeAproxmidade</h1>
 Um plugin pro scp sl usando EXILED(exilado) que permite que pessoas mudas se comuniquem no jogo!!
