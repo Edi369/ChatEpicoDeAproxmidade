@@ -21,7 +21,7 @@ olha esse cachorro que bunito!!!!!
 
 <a href="https://i.imgur.com/atVwIpj.jpeg">
 <div align="left">
-  <img   src="https://github.com/Edi369/ChatEpicoDeAproxmidade/blob/main/Documentations/Assets/NOOCLASSD.gif"  />
+  <img alt="NOOCLASSD.gif" src="https://github.com/Edi369/ChatEpicoDeAproxmidade/blob/main/Documentations/Assets/NOOCLASSD.gif?raw=true" data-hpc="true" />
 </div>
 </a>
 
