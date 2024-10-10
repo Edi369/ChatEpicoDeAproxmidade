@@ -5,8 +5,8 @@ Um plugin pro scp sl usando EXILED(exilado) que permite que pessoas mudas se com
 
 ahh, ta tudo em português do brasil!! pra ficar massa d+
 
-## **- ainda em desenvolvimento!**
-## **- esse readme tbm esta em desenvolvimento**
+### **- ainda em desenvolvimento!**
+### **- esse readme tbm esta em desenvolvimento**
 
 para mais info vc pode talvez entrar no meu server do [dc](https://discord.gg/Wb9248PwwY)
 
@@ -15,7 +15,12 @@ olha esse cachorro que bunito!!!!!
   <img height="200" src="https://media.tenor.com/D29_A107n2cAAAAi/dog-gyrating.gif"  />
 </div>
 
-## Config yaml:
+## Showcase massa:
+### não tem por enquanto..
+
+<div align="left">
+  <img src="https://i.imgur.com/Dxf8FHW.png"  />
+</div>
 
 ```yaml
 aproximity_chat:
@@ -27,18 +32,15 @@ aproximity_chat:
   webhook_dc: ''
   # A distancia BASE do Chat de proximidade epic!!!
   distancia: 7
-  # Ativa ou Desativa o update de GlobalTags, bem paia isso aqui ó
+  # Ativa ou Desativa o update de GlobalTags.. desativar isso aqui seria bem paia ó
   global_tags: true
-  # Ativa ou Desativa o update de BansPerms, recomendado deixar ativado..
+  # Ativa ou Desativa o update de BansPerms, recomendado deixar ativado
   global_perms: true
   # Aqui você pode colocar sua customtag para aparecer na sua msg!!! funciona praticamente igual vc defenir um cargo no config do scp sl
   custom_tag:
     steamid64@here: '[customtaghere]'
     patrickbateman@patrickbateman: '[patrick bateman]'
 ```
-
-## Showcase massa:
-### não tem por enquanto..
 
 # Creditos
 - Tudo por [Edi](https://github.com/Edi369)
