@@ -8,9 +8,6 @@ ahh, ta tudo em português do brasil!! pra ficar massa d+
 ### **- ainda em desenvolvimento!**
 ### **- esse readme tbm esta em desenvolvimento**
 
-para mais info vc pode talvez entrar no meu server do dc
-ELE TBM N TA PRONTO!!!!!!! DROGA
-
 olha esse cachorro que bunito!!!!!
 <div align="left">
   <img height="200" src="https://media.tenor.com/D29_A107n2cAAAAi/dog-gyrating.gif"  />
