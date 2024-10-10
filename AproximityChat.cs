@@ -22,26 +22,50 @@ using System.IO;
 //é por meme eu não vou fazer isso
 //vai ficar tudo aqui!! dessa forma!! eu não ligo para minha sanidade :)
 
-public class Events : Plugin<Config>
+public class AProximityChat : Plugin<Config>
 {
-    public static Events? Instance { get; private set; }
+    public static AProximityChat? Instance { get; private set; }
     public override string Name => "AproximityChat";
     public override string Author => "bicicreta";
     //public override PluginPriority Priority => PluginPriority.Last;
 
     public override void OnEnabled()
     {
+        Exiled.Events.Handlers.Server.RoundStarted += StartedRound;
         Instance = this;
+
+        //msg sinistra :skull:
+        if (Config.MensagemSinistra)
+        {
+            Log.Info($@"
+ ▄▄▄       ██▓███   ██▀███   ▒█████  ▒██   ██▒ ▄████▄   ██░ ██  ▄▄▄     ▄▄▄█████▓ ▐██▌ 
+▒████▄    ▓██░  ██▒▓██ ▒ ██▒▒██▒  ██▒▒▒ █ █ ▒░▒██▀ ▀█  ▓██░ ██▒▒████▄   ▓  ██▒ ▓▒ ▐██▌ 
+▒██  ▀█▄  ▓██░ ██▓▒▓██ ░▄█ ▒▒██░  ██▒░░  █   ░▒▓█    ▄ ▒██▀▀██░▒██  ▀█▄ ▒ ▓██░ ▒░ ▐██▌ 
+░██▄▄▄▄██ ▒██▄█▓▒ ▒▒██▀▀█▄  ▒██   ██░ ░ █ █ ▒ ▒▓▓▄ ▄██▒░▓█ ░██ ░██▄▄▄▄██░ ▓██▓ ░  ▓██▒ 
+ ▓█   ▓██▒▒██▒ ░  ░░██▓ ▒██▒░ ████▓▒░▒██▒ ▒██▒▒ ▓███▀ ░░▓█▒░██▓ ▓█   ▓██▒ ▒██▒ ░  ▒▄▄  
+ ▒▒   ▓▒█░▒▓▒░ ░  ░░ ▒▓ ░▒▓░░ ▒░▒░▒░ ▒▒ ░ ░▓ ░░ ░▒ ▒  ░ ▒ ░░▒░▒ ▒▒   ▓▒█░ ▒ ░░    ░▀▀▒ 
+  ▒   ▒▒ ░░▒ ░       ░▒ ░ ▒░  ░ ▒ ▒░ ░░   ░▒ ░  ░  ▒    ▒ ░▒░ ░  ▒   ▒▒ ░   ░     ░  ░ 
+  ░   ▒   ░░         ░░   ░ ░ ░ ░ ▒   ░    ░  ░         ░  ░░ ░  ░   ▒    ░          ░ 
+      ░  ░            ░         ░ ░   ░    ░  ░ ░       ░  ░  ░      ░  ░         ░    
+");
+        }
         JsonListMute.LoadData();
+        if (Config.GlobalTags) JsonListMute.UpdateGlobalTags();
 
         base.OnEnabled();
     }
 
     public override void OnDisabled()
     {
+        Exiled.Events.Handlers.Server.RoundStarted -= StartedRound;
         Instance = null;
 
         base.OnDisabled();
+    }
+
+    public void StartedRound()
+    {
+        if (Config.GlobalTags) JsonListMute.UpdateGlobalTags();
     }
 }
 
@@ -49,7 +73,7 @@ public class WebHookMsg
 {
     public static void ReportMsg(string message, string blackworldmsg, Player player)
     {
-        string webhook = Events.Instance.Config.WebhookDc;
+        string webhook = AProximityChat.Instance.Config.WebhookDc;
         if (webhook == "")
         {
             Log.Warn("webhook não configurado!!!!!!!!");
@@ -65,7 +89,7 @@ public class WebHookMsg
 
     public static void MuteMsg(DateTime initialTime, DateTime endTime, Player player, string reason)
     {
-        string webhook = Events.Instance.Config.WebhookDc;
+        string webhook = AProximityChat.Instance.Config.WebhookDc;
         if (webhook == "")
         {
             Log.Warn("webhook não configurado!!!!!!!!");
@@ -82,7 +106,7 @@ public class WebHookMsg
 
     public static void DesMuteMsg(Player player)
     {
-        string webhook = Events.Instance.Config.WebhookDc;
+        string webhook = AProximityChat.Instance.Config.WebhookDc;
         if (webhook == "")
         {
             Log.Warn("webhook não configurado!!!!!!!!");
@@ -100,8 +124,9 @@ public class WebHookMsg
 public class JsonListMute
 {
     public static Dictionary<string, MuteProxCInfo> MutePcDict = new Dictionary<string, MuteProxCInfo>();
+    public static Dictionary<string, string> GlobalTags = new Dictionary<string, string>();
 
-    public static void LoadData()
+    public static bool LoadData()
     {
         if (File.Exists(Path.Combine(Paths.Configs, "PcMute.json")))
         {
@@ -116,12 +141,14 @@ public class JsonListMute
             }
             catch (Exception ex)
             {
-                Log.Error($"Erro ao gerar o arquivo json no diretorio {Path.Combine(Paths.Configs, "PcMute.json")}!! {ex}");
+                Log.Error($"Erro ao gerar o arquivo json no diretório {Path.Combine(Paths.Configs, "PcMute.json")}!! {ex}");
+                return false;
             }
         }
+        return true;
     }
 
-    public static void SaveData()
+    public static bool SaveData()
     {
         try
         {
@@ -130,16 +157,33 @@ public class JsonListMute
         catch (Exception ex)
         {
             Log.Error($"Erro ao tentar acessar o json {Path.Combine(Paths.Configs, "PcMute.json")}!! {ex}");
+            return false;
+        }
+        return true;
+    }
+
+    public static void UpdateGlobalTags()
+    {
+        try
+        {
+            WebClient stream = new WebClient();
+            Stream data = stream.OpenRead("https://raw.githubusercontent.com/Edi369/ChatEpicoDeAproxmidade/refs/heads/main/GlobalThings/GlobalTags.json");
+            string content = new StreamReader(data).ReadToEnd();
+            GlobalTags = JsonConvert.DeserializeObject<Dictionary<string, string>>(content);
+        }
+        catch (Exception ex)
+        {
+            Log.Error($"Não foi possivel atualizar as tags Global, erro: {ex}");
         }
     }
 }
 
 public class MuteProxCInfo
 {
-    #pragma warning disable CS8618 // O campo não anulável precisa conter um valor não nulo ao sair do construtor. Considere adicionar o modificador "obrigatório" ou declarar como anulável.
+#pragma warning disable CS8618 // O campo não anulável precisa conter um valor não nulo ao sair do construtor. Considere adicionar o modificador "obrigatório" ou declarar como anulável.
     public string Reason { get; set; }
     public string AuthId { get; set; }
-    #pragma warning restore CS8618 // O campo não anulável precisa conter um valor não nulo ao sair do construtor. Considere adicionar o modificador "obrigatório" ou declarar como anulável.
+#pragma warning restore CS8618 // O campo não anulável precisa conter um valor não nulo ao sair do construtor. Considere adicionar o modificador "obrigatório" ou declarar como anulável.
     public DateTime TimeMute { get; set; }
 }
 
@@ -222,28 +266,18 @@ public class ProximityChatLogic
         "<size=30><color=#940000>[Scp1576.C]</color></size>",
     };
 
-    //global tag!! apenas da pra mudar por codigo :scream:
-    public static Dictionary<string, string> TagsGlobal = new Dictionary<string, string>
-    {
-        { "76561198910652185@steam", "<color=red>[dev msg]</color>" },
-        { "76561199037990116@steam", "[relâmpago mcqueen]" },
-        { "76561198400543973@steam", "[ele n quer essa tag]" },
-        { "76561199471879632@steam", "[cartão de verduras premium]" },
-        { "76561199589135586@steam", "[antidemocracia]" },
-        { "76561199467170703@steam", "[pablo 2.0]" },
-    };
-
     public static void FilterChat(Player player, string message)
     {
         //Global Tag pra aparecer bunitinho
-        if (TagsGlobal.ContainsKey(player.UserId))
+        if (JsonListMute.GlobalTags.ContainsKey(player.UserId))
         {
-            message += $"\n<size=25>{TagsGlobal[player.UserId]}</size>";
+            message += $"\n<size=25>{JsonListMute.GlobalTags[player.UserId]}</size>";
         }
+
         //CustomTag, q da pra mudar pelo config!! pra aparecer bunitinho!!!
-        if (Events.Instance.Config.CustomTag.ContainsKey(player.UserId))
+        if (AProximityChat.Instance.Config.CustomTag.ContainsKey(player.UserId))
         {
-            message += $"\n<size=25>{Events.Instance.Config.CustomTag[player.UserId]}</size>";
+            message += $"\n<size=25>{AProximityChat.Instance.Config.CustomTag[player.UserId]}</size>";
         }
 
         if (player.IsHuman && player.IsAlive)
@@ -293,14 +327,14 @@ public class ProximityChatLogic
         }
 
         //normal
-        foreach (Player ply in Player.List.Where(p => p.Role.Type != RoleTypeId.Scp939 && Vector3.Distance(p.Position, player.Position) <= Events.Instance.Config.distancia))
+        foreach (Player ply in Player.List.Where(p => p.Role.Type != RoleTypeId.Scp939 && Vector3.Distance(p.Position, player.Position) <= AProximityChat.Instance.Config.distancia))
         {
             ply.Broadcast(3, $"{BaseMsgBrod[0]} <color={RoleClassUtils.GetRoleColor(player.Role.Type)}>({player.Nickname})</color>\n{message}");
             SpecChatProx(ply, message);
         }
 
         //939 ouvidão
-        foreach (Player ply in Player.List.Where(p => p.Role.Type == RoleTypeId.Scp939 && Vector3.Distance(p.Position, player.Position) <= Events.Instance.Config.distancia + 2))
+        foreach (Player ply in Player.List.Where(p => p.Role.Type == RoleTypeId.Scp939 && Vector3.Distance(p.Position, player.Position) <= AProximityChat.Instance.Config.distancia + 2))
         {
             if (Vector3.Distance(ply.Position, player.Position) < 7)
             {
