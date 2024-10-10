@@ -1,8 +1,7 @@
 [![LogoMassa](https://i.imgur.com/hbH6zhI.png)](https://discord.gg/Wb9248PwwY)
 
 <h1 align="right">ChatEpicoDeAproxmidade</h1>
-
-Um plugin pro [*scp sl*](https://store.steampowered.com/app/700330/SCP_Secret_Laboratory) usando [**EXILED**](https://github.com/Exiled-Team/EXILED) que permite que pessoas mudas se comuniquem no jogo!!
+<h3>Um plugin pro <a href="https://store.steampowered.com/app/700330/SCP_Secret_Laboratory">*scp sl*</a> usando <a href="https://github.com/Exiled-Team/EXILED">**EXILED**</a> que permite que pessoas mudas se comuniquem no jogo!!</h3>
 
 ahh, ta tudo em português do brasil!! pra ficar massa d+
 
