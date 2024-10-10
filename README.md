@@ -3,6 +3,7 @@
 <h1 align="right">ChatEpicoDeAproxmidade</h1>
 
 Um plugin pro [*scp sl*](https://store.steampowered.com/app/700330/SCP_Secret_Laboratory) usando [**EXILED**](https://github.com/Exiled-Team/EXILED) que permite que pessoas mudas se comuniquem no jogo!!
+
 ahh, ta tudo em português do brasil!! pra ficar massa d+
 
 ### **- ainda em desenvolvimento!**
