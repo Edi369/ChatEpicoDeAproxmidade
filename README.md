@@ -13,13 +13,13 @@ olha esse cachorro que bunito!!!!!
   <img height="200" src="https://media.tenor.com/D29_A107n2cAAAAi/dog-gyrating.gif"  />
 </div>
 
-<div align="left">
+<div align="left" href="https://i.imgur.com/atVwIpj.jpeg">
   <img   src="https://i.imgur.com/Al07rXP.png"  />
 </div>
 
 ### não tem por enquanto.. um dia vai ter
 
-<div align="left">
+<div align="left" href="https://i.imgur.com/atVwIpj.jpeg">
   <img src="https://i.imgur.com/Dxf8FHW.png"  />
 </div>
 
@@ -43,7 +43,7 @@ aproximity_chat:
     patrickbateman@patrickbateman: '[patrick bateman]'
 ```
 
-<div align="left">
+<div align="left" href="https://i.imgur.com/atVwIpj.jpeg">
   <img   src="https://i.imgur.com/t8ovAYS.png"  />
 </div>
 
