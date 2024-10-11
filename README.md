@@ -14,12 +14,14 @@ olha esse cachorro que bunito!!!!!
 
 <div align="center">
 
-[![ShowCase](https://github.com/user-attachments/assets/1c704da6-108e-4886-8730-6654f2dd8439)](https://i.imgur.com/atVwIpj.jpeg)
+[![ShowCase](https://github.com/user-attachments/assets/1c704da6-108e-4886-8730-6654f2dd8439)](https://github.com/Edi369/ChatEpicoDeAproxmidade/blob/main/Documentations/ProxChat.md)
 #
 
 *pretendo mudar depois os videos.. por enquanto tudo aqui é placeholder tbm... foi mal..*
 
 *ignora que praticamente todos os videos nenhuma vez a gente forma uma frase... não aprendemos a escrever direito ainda :(*
+
+ㅤ
 
 [![ProximityChat](https://github.com/user-attachments/assets/9b9c4065-ccd3-40f3-a7b1-643694907bde)](https://i.imgur.com/atVwIpj.jpeg)
 ### O ProximityChat é um chat que aparace apenas pra quem ta perto da pessoa que envio a mensagem, literalmente o novo do chat... Apenas HUMANOS consegue enviar mensagens nesse chat!
@@ -61,21 +63,21 @@ https://github.com/user-attachments/assets/2d8fe99b-9423-42d4-a8e6-d3bdf8107b6d
 
 <div div align="center">
 
-![Moderation](https://github.com/user-attachments/assets/095f92dc-0eb9-4dc1-b09a-635a20e608f7)
+ㅤ
 
-</div>
+[![Moderation](https://github.com/user-attachments/assets/095f92dc-0eb9-4dc1-b09a-635a20e608f7)](https://github.com/Edi369/ChatEpicoDeAproxmidade/blob/main/Documentations/ProxChatMute.md)
 
 ### O [AproximityChat](https://github.com/Edi369/ChatEpicoDeAproxmidade/blob/main/AproximityChat.cs) tem um sistema basico porem útil de moderação! Para saber com detalhes, você pode acessar a [Documentação](https://github.com/Edi369/ChatEpicoDeAproxmidade/blob/main/Documentations/ProxChatMute.md) sobre o sistema de moderação para staffs.
 
-<div align="center">
-  
+ㅤ
+
 [![Info](https://github.com/user-attachments/assets/ca89420e-425f-4481-a2a8-6f80ce9c7df3)](https://i.imgur.com/atVwIpj.jpeg)
 
 </div>
 
 [![Dependecies](https://github.com/user-attachments/assets/5dc872f5-f125-4477-885e-29d846a2dc09)](https://github.com/Edi369/ChatEpicoDeAproxmidade/tree/main/Dependencies)
 
-O plugin só precisa de 2 extras dll pra funcionar, o [``BikeUtils.dll``](https://github.com/Edi369/ChatEpicoDeAproxmidade/blob/main/Dependencies/BikeUtils.dll), é o [``Newtonsoft.Json.dll``](https://github.com/Edi369/ChatEpicoDeAproxmidade/blob/main/Dependencies/Newtonsoft.Json.dll)
+O plugin só precisa de 2 extras dll pra funcionar, o [``BikeUtils.dll``](https://github.com/Edi369/ChatEpicoDeAproxmidade/blob/main/Dependencies/BikeUtils.dll), e o [``Newtonsoft.Json.dll``](https://github.com/Edi369/ChatEpicoDeAproxmidade/blob/main/Dependencies/Newtonsoft.Json.dll)
 
 que podem ser encontrado no diretorio [Dependencies](https://github.com/Edi369/ChatEpicoDeAproxmidade/tree/main/Dependencies)
 
