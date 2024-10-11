@@ -40,24 +40,32 @@ https://github.com/user-attachments/assets/70a6a7e9-29f8-4c08-8157-0f27ce08d329
 ##
 
 [![SpecChat](https://github.com/user-attachments/assets/4ca4a962-4b8f-4519-8dd8-d1abf3810cff)](https://i.imgur.com/atVwIpj.jpeg)
-### Fale atraves de texto com seus parceiros de MORTE!!!
+### Fale atraves de texto com seus parceiros MORTOS!!!
 
 https://github.com/user-attachments/assets/b5a24806-595f-4581-9b58-40692a430f31
 
-**tanto eles como você vai adorar a presença daquele que matou :)**
+**tanto eles como você vai adorar a presença daquele que matou todos :)**
 
 ##
 
 [![Scp1576Chat](https://github.com/user-attachments/assets/1aceace2-1160-41bb-a270-0f2ab589082a)](https://i.imgur.com/atVwIpj.jpeg)
-### Fale com os mortos atraves de texto!!! Que imersivo... Quem tiver morto também consegue se comunicar com você caso o Scp1576 tiver em funcionamento.
+### Fale com os mortos atraves de texto!!! Que imersivo... Quem tiver morto também consegue se comunicar com você caso o Scp1576 tiver em funcionamento. você também pode se comunicar com os mortos caso o Scp1576 tiver em funcionamento.
 
 https://github.com/user-attachments/assets/2d8fe99b-9423-42d4-a8e6-d3bdf8107b6d
 
 **não tem mais oque explicar... só isso mesmo**
 
-#
+## Você pode ver mais coisas sobre os Chats de Aproximidade que não foi falado aqui acessando a [Documentação](https://github.com/Edi369/ChatEpicoDeAproxmidade/blob/main/Documentations/ProxChat.md) sobre os Chats
 
 </div>
+
+<div div align="center">
+
+![Moderation](https://github.com/user-attachments/assets/095f92dc-0eb9-4dc1-b09a-635a20e608f7)
+
+</div>
+
+### O [AproximityChat](https://github.com/Edi369/ChatEpicoDeAproxmidade/blob/main/AproximityChat.cs) tem um sistema basico porem útil de moderação! Para saber com detalhes, você pode acessar a [Documentação](https://github.com/Edi369/ChatEpicoDeAproxmidade/blob/main/Documentations/ProxChatMute.md) sobre o sistema de moderação para staffs.
 
 <div align="center">
   
@@ -65,13 +73,13 @@ https://github.com/user-attachments/assets/2d8fe99b-9423-42d4-a8e6-d3bdf8107b6d
 
 </div>
 
-[![Dependecies](https://github.com/user-attachments/assets/5dc872f5-f125-4477-885e-29d846a2dc09)](https://i.imgur.com/atVwIpj.jpeg)
+[![Dependecies](https://github.com/user-attachments/assets/5dc872f5-f125-4477-885e-29d846a2dc09)](https://github.com/Edi369/ChatEpicoDeAproxmidade/tree/main/Dependencies)
 
 O plugin só precisa de 2 extras dll pra funcionar, o [``BikeUtils.dll``](https://github.com/Edi369/ChatEpicoDeAproxmidade/blob/main/Dependencies/BikeUtils.dll), é o [``Newtonsoft.Json.dll``](https://github.com/Edi369/ChatEpicoDeAproxmidade/blob/main/Dependencies/Newtonsoft.Json.dll)
 
 que podem ser encontrado no diretorio [Dependencies](https://github.com/Edi369/ChatEpicoDeAproxmidade/tree/main/Dependencies)
 
-[![config](https://github.com/user-attachments/assets/3ae321a0-41b5-4e00-b8fc-5e6f5c5823df)](https://i.imgur.com/atVwIpj.jpeg)
+[![config](https://github.com/user-attachments/assets/3ae321a0-41b5-4e00-b8fc-5e6f5c5823df)](https://github.com/Edi369/ChatEpicoDeAproxmidade/blob/main/Config.cs)
 
 ```yaml
 aproximity_chat:
