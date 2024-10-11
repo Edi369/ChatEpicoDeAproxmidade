@@ -64,7 +64,7 @@ public class MuteProximityChat : ICommand, IHelpProvider
         }
 
         string reason = "[REDIGIDO]";
-        Int32.TryParse(Regex.Replace(arguments.At(1), @"[^\d]", ""), out int timeBan);
+        int.TryParse(Regex.Replace(arguments.At(1), @"[^\d]", ""), out int timeBan);
 
         if (timeBan < 1)
         {
@@ -79,7 +79,6 @@ public class MuteProximityChat : ICommand, IHelpProvider
             {
                 reason += arguments.At(i - 1) + " ";
             }
-            //reason = arguments.At(2);
         }
 
         if (JsonLists.MutePcDict.ContainsKey(player.UserId))

@@ -3,6 +3,7 @@
 using Exiled.API.Interfaces;
 using System.Collections.Generic;
 using System.ComponentModel;
+using AproximityChat.API;
 
 public class Config : IConfig
 {
@@ -32,4 +33,3 @@ public class Config : IConfig
         { "testefunny@test", "[funny]" }
     };
 }
-

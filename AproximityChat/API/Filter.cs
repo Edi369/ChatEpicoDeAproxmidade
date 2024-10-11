@@ -1,47 +1,50 @@
 ﻿namespace AproximityChat.API;
 
 using Exiled.API.Features;
+using Newtonsoft.Json;
 using PlayerRoles;
+using System.IO;
 
 public class FilterChat
 {
-    static string[] BlackList = new string[]
-    {
-        "nigger",
-        "nigge",
-        "black",
-        "preto",
-        "n.i.g.g.e.r",
-        "n.i.g.g.e",
-        "p.r.e.t.o",
-        "negrão",
-        "nazismo",
-        "nazista",
-        "hitler",
-        "h.i.t.l.e.r",
-        "mongoloide",
-        "mongolóide",
-    };
-
     static public bool FilterChatWords(string message, Player player)
     {
-        foreach (string blacklistmsg in BlackList)
+        foreach (BannedWord blacklistmsg in JsonLists.BlackList)
         {
-            if (message.ToLower().Contains(blacklistmsg))
+            if (message.ToLower().Contains(blacklistmsg.Word))
             {
                 if (JsonLists.MutePcDict.ContainsKey(player.UserId))
                 {
-                    JsonLists.MutePcDict[player.UserId].TimeMute = JsonLists.MutePcDict[player.UserId].TimeMute.AddMinutes(1);
+                    JsonLists.MutePcDict[player.UserId].TimeMute = JsonLists.MutePcDict[player.UserId].TimeMute.AddMinutes(blacklistmsg.Weight);
                     JsonLists.SaveData();
                 }
                 else
                 {
-                    MuteProxCLogic.Mute(player, 1, "[AutoMute] Palavra feia!");
-                    WebHookMsg.ReportMsg(message, blacklistmsg, player);
+                    MuteProxCLogic.Mute(player, blacklistmsg.Weight, "[AutoMute] Palavra feia!");
+                    WebHookMsg.ReportMsg(message, blacklistmsg.Word, player);
                 }
                 return false;
             }
         }
+
+        foreach (BannedWord blacklistmsg in JsonLists.CustomBlackList)
+        {
+            if (message.ToLower().Contains(blacklistmsg.Word))
+            {
+                if (JsonLists.MutePcDict.ContainsKey(player.UserId))
+                {
+                    JsonLists.MutePcDict[player.UserId].TimeMute = JsonLists.MutePcDict[player.UserId].TimeMute.AddMinutes(blacklistmsg.Weight);
+                    JsonLists.SaveData();
+                }
+                else
+                {
+                    MuteProxCLogic.Mute(player, blacklistmsg.Weight, "[AutoMute] Palavra feia!");
+                    WebHookMsg.ReportMsg(message, blacklistmsg.Word, player);
+                }
+                return false;
+            }
+        }
+
         return true;
     }
 }
