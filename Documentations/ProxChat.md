@@ -1,5 +1,37 @@
 <div align="center">
 
+[![Tutorial](https://github.com/user-attachments/assets/4212d98e-1d15-4027-afbd-75fc55d686d7)](https://i.imgur.com/atVwIpj.jpeg)
+
+# Como manda uma mensagem de aproximidade?
+
+</div>
+
+Primeiramente você abre o console do jogo apertando **`** *(caso você não tenha mudado a tecla do console)* e em seguida digite
+
+### ``.sc`` [mensagem]
+
+### <h4>não é obrigatorio usar ``.sc``, já que existe outras variações do comando pra usar o ProximityChat, sendo ``.pc``, ``.rc``. ``.lc``. Porem eu prefiro o ``.sc`` por que o *S* e o *C* estão perto um do outro no teclado, ficando mais facil é rapido de digitar 😎</h4>
+
+isso vai mandar a mensagem para o Chat com base o seu cargo ou o item que você esta segurando!
+
+<h6>(gif funny mostrando o comando)</h6>
+
+[![scShow](https://github.com/user-attachments/assets/56fb935f-1c10-4033-952f-2f4756b9bf14)](https://i.imgur.com/atVwIpj.jpeg)
+
+Mesmo existindo mais de 1 chat, o comando é o **MESMO**!
+
+<h6>(gif funny mostrando o mesmo comando porem com chats diferente)</h6>
+
+[![scALLShow](https://github.com/user-attachments/assets/11958b7f-416c-43f9-b0ca-378fa8aa73a8)](https://i.imgur.com/atVwIpj.jpeg)
+
+ㅤ
+
+<div align="center">
+
+[![Chats](https://github.com/user-attachments/assets/ec00ef90-08f7-40d8-8103-7b711b1fc026)](https://i.imgur.com/atVwIpj.jpeg)
+
+#
+
 [![ProximityChat](https://github.com/user-attachments/assets/9b9c4065-ccd3-40f3-a7b1-643694907bde)](https://i.imgur.com/atVwIpj.jpeg)
 ### O ProximityChat é um chat que aparace apenas pra quem ta perto da pessoa que envio a mensagem, literalmente o novo do chat... Apenas HUMANOS consegue enviar mensagens nesse chat!
 
