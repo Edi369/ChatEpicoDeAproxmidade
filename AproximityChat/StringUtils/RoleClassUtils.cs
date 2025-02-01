@@ -2,9 +2,9 @@
 using PlayerRoles;
 using UnityEngine;
 
-//Credito a 
-
-
+//Creditos a MMDDKK - https://github.com/MMDDKK6500/BikeUtils
+//Creditos a MMDDKK - https://github.com/MMDDKK6500/BikeUtils
+//Creditos a MMDDKK - https://github.com/MMDDKK6500/BikeUtils
 
 /// <summary>
 /// A class containing utilities for the game's roles and classes.
