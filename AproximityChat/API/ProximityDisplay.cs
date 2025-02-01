@@ -92,9 +92,29 @@ public class ProximityChatLogic
 
     public static void SpectatorChat(Player player, string message)
     {
-        foreach (Player Receiver in Player.List.Where(p => p.Role.Type == RoleTypeId.Spectator))
+        //spectador
+        foreach (Player ply in Player.List.Where(p => p.Role.Type == RoleTypeId.Spectator))
         {
-             Receiver.Broadcast(3, $"{BaseMsgBrod[3]} ({player.Nickname})\n{message}");
+            if (player.Role.Type != RoleTypeId.Spectator)
+            {
+                ply.Broadcast(3, $"{BaseMsgBrod[5]} ({player.Nickname})\n{message}");
+            }
+            else
+            {
+                ply.Broadcast(3, $"{BaseMsgBrod[3]} ({player.Nickname})\n{message}");
+            }
+        }
+
+        //pra quem esta usando o item scp1576
+        foreach (Player ply in Player.List.Where(p => p.CurrentItem != null && p.CurrentItem.Type == ItemType.SCP1576 && p != player))
+        {
+            if (ply.CurrentItem.Base is Scp1576Item scp1576)
+            {
+                if (scp1576.IsUsing)
+                {
+                    ply.Broadcast(3, $"{BaseMsgBrod[5]} ({player.Nickname})\n{message}");
+                }
+            }
         }
     }
     public static bool Scp1576Chat(Player player, string message)
