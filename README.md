@@ -100,6 +100,8 @@ aproximity_chat:
 
 - Programação inteira do plugin por [**Edi**](https://github.com/Edi369)
 - Documentação do plugin inteira por [**Edi**](https://github.com/Edi369) *(eu mesmo de novo yipeee)*
+- RadioChat por [**Unbistrackted**](https://github.com/Unbistrackted)
+- Arrumar e adicionar novas lógicas aos Chats por [**Unbistrackted**](https://github.com/Unbistrackted)
 - **учитель письма** Por ter participado dos video do ShowCase
 #
 *cabo :)*
