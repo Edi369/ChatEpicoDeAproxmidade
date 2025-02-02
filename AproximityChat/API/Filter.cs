@@ -1,4 +1,4 @@
-﻿namespace AproximityChat.API;
+namespace AproximityChat.API;
 
 using Exiled.API.Features;
 using Newtonsoft.Json;
@@ -73,16 +73,9 @@ public class FilterChatClass
 
         if (player.IsHuman && player.IsAlive)
         {
-            /* if (player.CurrentItem != null)
-            {
-                if (player.CurrentItem.Type == ItemType.Radio)
-                {
-                    RadioChat(player, message);
-                    return;
-                }
-            } */
-            ProximityChatLogic.ProximityChat(player, message);
-            return;
+            ProximityChatLogic.RadioChat(player, message, out Player? radioWorked);
+            ProximityChatLogic.ProximityChat(player, message, radioWorked);
+            ProximityChatLogic.Scp1576Chat(player, message);
         }
 
         if (player.IsScp && player.IsAlive)

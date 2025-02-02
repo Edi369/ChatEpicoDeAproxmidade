@@ -68,7 +68,7 @@ https://github.com/user-attachments/assets/b5a24806-595f-4581-9b58-40692a430f31
 
 [![Dependecies](https://github.com/user-attachments/assets/5dc872f5-f125-4477-885e-29d846a2dc09)](https://github.com/Edi369/ChatEpicoDeAproxmidade/tree/main/Dependencies)
 
-O plugin só precisa de 2 extras dll pra funcionar, o [``BikeUtils.dll``](https://github.com/Edi369/ChatEpicoDeAproxmidade/blob/main/Dependencies/BikeUtils.dll), e o [``Newtonsoft.Json.dll``](https://github.com/Edi369/ChatEpicoDeAproxmidade/blob/main/Dependencies/Newtonsoft.Json.dll)
+O plugin só precisa de uma dependecia extra pra funcionar o [``Newtonsoft.Json.dll``](https://github.com/Edi369/ChatEpicoDeAproxmidade/blob/main/Dependencies/Newtonsoft.Json.dll)
 
 que podem ser encontrado no diretorio [Dependencies](https://github.com/Edi369/ChatEpicoDeAproxmidade/tree/main/Dependencies)
 
@@ -100,6 +100,8 @@ aproximity_chat:
 
 - Programação inteira do plugin por [**Edi**](https://github.com/Edi369)
 - Documentação do plugin inteira por [**Edi**](https://github.com/Edi369) *(eu mesmo de novo yipeee)*
+- RadioChat por [**Unbistrackted**](https://github.com/Unbistrackted)
+- Arrumar e adicionar novas lógicas aos Chats por [**Unbistrackted**](https://github.com/Unbistrackted) e [**Playeroth**](https://github.com/Playeroth)
 - **учитель письма** Por ter participado dos video do ShowCase
 #
 *cabo :)*
